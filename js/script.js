@@ -44,6 +44,6 @@ let numeroA=parseInt(prompt("Ingrese Numero 1: "));
 let numeroB=parseInt(prompt("Ingrese Numero 2: "));
 let resultado=numeroA+numeroB;
 
-alert(resultado);
-//alert("El resultado es: "+ resultado);
+//alert(resultado);
+alert("El resultado es: "+ resultado);
 console.log(typeof resultado);
