@@ -1,6 +1,9 @@
 console.log("Hola Mundo");
 let nombre = prompt("Ingresa tu Nombre: ");
 let edad = parseInt(prompt("Ingresa Edad: "));
+if(isNaN(edad)){
+    alert("Error, Ingrese un Numero");
+}
 let mesNaci = parseInt(prompt("Ingresa mes de Nacimiento (En número): "));
 switch (mesNaci) {
     case 1:
@@ -79,4 +82,35 @@ if (confirmacion == true) {
     alert("División es: " + division);
     console.log(nombre + " El tipo de dato de suma es: " + typeof suma);
     console.log(nombre + " El tipo de dato de resta es: " + typeof resta);
+}
+
+
+/*Clase 26-11-2024*/
+/*Validar Si es Estrictamente Igual*/
+/*
+if(numeroA===numeroB){
+    alert("Mensaje De validacion")
+}*/
+/*
+let nombreUsuario=prompt("Ingresesu nombre");
+while(nombreUsuario === '' || !isNaN(nombreUsuario)){
+    alert("Ingrese un Nombre Valido");
+    nombreUsuario=prompt("Ingrese su nombre");
+}
+alert("Su nombre es "+nombreUsuario);
+*/
+let nombreUsuario;
+let validacion;
+
+do{
+    nombreUsuario=prompt("Ingresesu nombre");
+    validacion=nombreUsuario === '' || !isNaN(nombreUsuario);
+    if(validacion){
+        alert("Ingrese un Nombre Valido");
+    }
+}while(validacion);
+alert("Su nombre es "+nombreUsuario);
+
+for (let i=0; i<5;i++){
+    console.log("Me estooy ejecutando "+(i1)+ " veces");
 }
